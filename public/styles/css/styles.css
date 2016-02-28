@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,300italic);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 11pt; }
+
+.wrapper {
+  position: relative;
+  /*overflow: hidden;*/
+  min-height: 500px; }
+
+#map {
+  min-height: 400px;
+  min-width: 400px;
+  width: 77%;
+  height: 99%;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 50px;
+  margin: 0 0 0 5px;
+  border: 1px solid #ccc; }
+
+#comps {
+  position: absolute;
+  top: 50px;
+  right: 1%;
+  width: 20%;
+  height: 100%;
+  /*overflow: auto;*/ }
+  #comps .address {
+    width: 100%;
+    height: 5%;
+    margin: 0 auto 10px;
+    display: block;
+    font-size: 12pt;
+    padding: 4px 7px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+    border: 1px solid #ccc; }
+  #comps #addresssearch {
+    display: none; }
+  #comps #zpidlookup {
+    width: 100%;
+    margin: 0 auto 10px;
+    display: block;
+    font-size: 12pt;
+    padding: 5px 10px 6px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-border-radius: 2px;
+            border-radius: 2px;
+    border: 1px solid #0a5dd1;
+    color: #fff;
+    background: #3384F5; }
+    #comps #zpidlookup:hover {
+      background: #0a5dd1;
+      cursor: pointer; }
+  #comps .houselist {
+    width: 99%;
+    margin: 0 auto;
+    list-style: none; }
+    #comps .houselist .listing {
+      margin: 0 auto 25px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      padding: 10px 20px;
+      background: #eee;
+      border: 1px solid #ccc;
+      -webkit-border-radius: 4px;
+              border-radius: 4px; }
+      #comps .houselist .listing p {
+        line-height: 1.4; }
+      #comps .houselist .listing .info span {
+        font-weight: bold; }
+      #comps .houselist .listing .street {
+        margin: 0 0 7px;
+        color: #3384F5;
+        font-size: 14pt;
+        font-weight: bold; }
+
+#photos {
+  position: absolute;
+  top: 110%;
+  left: 2%; }
