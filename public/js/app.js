@@ -20,7 +20,7 @@ function submitZpidLookup(evt){
 	Api.addressLookup(Api.endpoints.getsearchresults, Api.apiKey, Api.target.address, Api.target.zip).done(function(resp){
 		var zpid_response 	= Api.xml2json(resp).searchresults.response.results.result;
 		var zpid 			= Api.target.zpid = zpid_response.zpid;
-
+		
 		Api.getComps(Api.endpoints.comps, Api.apiKey, zpid, 25).done(function(resp){
 			var json 			= Api.xml2json(resp);
 			var compsResp 		= json.comps.response.properties;
